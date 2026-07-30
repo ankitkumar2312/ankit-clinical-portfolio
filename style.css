@@ -226,3 +226,35 @@ body{
     color:#cbd5e1;
     font-size:15px;
 }
+.gradient-text{
+    background:linear-gradient(90deg,#ffffff,#38bdf8,#ffffff);
+    background-size:200%;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    animation:shine 5s linear infinite;
+}
+
+@keyframes shine{
+    from{
+        background-position:0%;
+    }
+
+    to{
+        background-position:200%;
+    }
+}
+.hero-right img{
+    transition:.4s;
+}
+
+.hero-right img:hover{
+    transform:scale(1.05);
+}
+.btn{
+    box-shadow:0 10px 25px rgba(56,189,248,.25);
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 18px 35px rgba(56,189,248,.45);
+}
