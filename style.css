@@ -13,3 +13,12 @@ body{
     background:#0b1120;
     color:#ffffff;
 }
+body{
+    background:#0b1120;
+    color:white;
+    font-family:Poppins,sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
