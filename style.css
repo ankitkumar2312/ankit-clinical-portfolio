@@ -670,3 +670,29 @@ Scroll Animation
     width:100%;
 
 }
+/*=========================
+Back To Top Button
+=========================*/
+
+#backToTop{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:#38bdf8;
+    color:#fff;
+    font-size:22px;
+    cursor:pointer;
+    display:none;
+    z-index:999;
+    transition:.3s;
+    box-shadow:0 10px 25px rgba(56,189,248,.35);
+}
+
+#backToTop:hover{
+    transform:translateY(-5px);
+    background:#0ea5e9;
+}
