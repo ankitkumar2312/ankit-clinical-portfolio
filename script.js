@@ -28,3 +28,58 @@ hiddenElements.forEach(el=>{
     observer.observe(el);
 
 });
+// Animated Counter
+
+const counters = document.querySelectorAll(".counter");
+
+const counterObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+
+            const counter = entry.target;
+            const target = +counter.dataset.target;
+            let count = 0;
+
+            const speed = target / 60;
+
+            const update = () => {
+
+                if (count < target) {
+
+                    count += speed;
+                    counter.innerText = Math.ceil(count);
+
+                    requestAnimationFrame(update);
+
+                } else {
+
+                    if(target === 2){
+                        counter.innerText = "2+";
+                    }
+                    else if(target === 35){
+                        counter.innerText = "35+";
+                    }
+                    else{
+                        counter.innerText = target;
+                    }
+
+                }
+
+            };
+
+            update();
+            counterObserver.unobserve(counter);
+
+        }
+
+    });
+
+},{
+    threshold:0.5
+});
+
+counters.forEach(counter=>{
+    counterObserver.observe(counter);
+});
