@@ -856,3 +856,48 @@ Responsive Design
     z-index:0;
     transition:transform .08s linear;
 }
+/*=========================
+Clinical Portfolio
+=========================*/
+
+.portfolio{
+    padding:100px 8%;
+}
+
+.portfolio-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+
+.portfolio-card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(56,189,248,.15);
+    border-radius:18px;
+    padding:35px 30px;
+    transition:.35s;
+}
+
+.portfolio-card:hover{
+    transform:translateY(-8px);
+    border-color:#38bdf8;
+    box-shadow:0 15px 35px rgba(56,189,248,.2);
+}
+
+.portfolio-card i{
+    font-size:42px;
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.portfolio-card h3{
+    color:#fff;
+    margin-bottom:15px;
+    font-size:22px;
+}
+
+.portfolio-card p{
+    color:#94a3b8;
+    line-height:1.7;
+}
