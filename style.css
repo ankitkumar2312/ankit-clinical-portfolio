@@ -44,8 +44,9 @@ body{
 }
 
 .logo img{
-    height:50px;
-    width:auto;
+    height:48px;
+    width:48px;
+    object-fit:contain;
     display:block;
 }
 .nav-links{
