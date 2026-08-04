@@ -901,3 +901,20 @@ Clinical Portfolio
     color:#94a3b8;
     line-height:1.7;
 }
+/*=========================
+Animated Molecular Background
+=========================*/
+
+#molecule-bg{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    pointer-events:none;
+}
+
+body{
+    background:#0f172a;
+}
