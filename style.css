@@ -840,3 +840,19 @@ Responsive Design
     }
 
 }
+/* Cursor Glow */
+
+.cursor-glow{
+    position:fixed;
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    background:radial-gradient(circle,
+        rgba(56,189,248,.18) 0%,
+        rgba(56,189,248,.08) 35%,
+        transparent 70%);
+    pointer-events:none;
+    transform:translate(-50%,-50%);
+    z-index:0;
+    transition:transform .08s linear;
+}
