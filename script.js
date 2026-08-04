@@ -153,21 +153,21 @@ backToTop.addEventListener("click", () => {
 const menuToggle = document.querySelector(".menu-toggle");
 const mobileNav = document.querySelector(".nav-links");
 
-menuToggle.addEventListener("click", () => {
+if (menuToggle && mobileNav) {
 
-    mobileNav.classList.toggle("active");
+    menuToggle.addEventListener("click", () => {
+        mobileNav.classList.toggle("active");
+    });
 
-});
+    document.querySelectorAll(".nav-links a").forEach(link => {
 
-document.querySelectorAll(".nav-links a").forEach(link => {
-
-    link.addEventListener("click", () => {
-
-        mobileNav.classList.remove("active");
+        link.addEventListener("click", () => {
+            mobileNav.classList.remove("active");
+        });
 
     });
 
-});
+}
 // Cursor Glow
 
 const cursorGlow = document.querySelector(".cursor-glow");
