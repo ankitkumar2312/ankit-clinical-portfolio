@@ -697,3 +697,39 @@ Back To Top Button
     transform:translateY(-5px);
     background:#0ea5e9;
 }
+/*=========================
+Mobile Menu
+=========================*/
+
+.menu-toggle{
+    display:none;
+    font-size:28px;
+    color:#fff;
+    cursor:pointer;
+}
+
+@media (max-width:768px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-links{
+        position:absolute;
+        top:80px;
+        left:0;
+        width:100%;
+        background:#0f172a;
+        flex-direction:column;
+        text-align:center;
+        display:none;
+        padding:20px 0;
+        gap:20px;
+        border-top:1px solid rgba(255,255,255,.1);
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+}
