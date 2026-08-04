@@ -733,3 +733,103 @@ Mobile Menu
     }
 
 }
+/*=========================
+Responsive Design
+=========================*/
+
+@media (max-width: 768px){
+
+    /* Navbar */
+
+    .navbar{
+        padding:15px 20px;
+    }
+
+    /* Hero */
+
+    .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+        gap:40px;
+        padding:120px 20px 60px;
+    }
+
+    .hero-left{
+        width:100%;
+    }
+
+    .hero-right{
+        width:100%;
+    }
+
+    .hero-right img{
+        width:260px;
+        height:260px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero h2{
+        font-size:22px;
+    }
+
+    .hero-text{
+        font-size:16px;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .hero-stats{
+        grid-template-columns:1fr;
+    }
+
+    /* About */
+
+    .about{
+        flex-direction:column;
+        gap:40px;
+    }
+
+    .about-left,
+    .about-right{
+        width:100%;
+    }
+
+    /* Skills */
+
+    .skills-grid{
+        grid-template-columns:1fr;
+    }
+
+    /* Experience */
+
+    .timeline::before{
+        left:12px;
+    }
+
+    .timeline-item{
+        padding-left:40px;
+    }
+
+    /* Contact */
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    /* Section headings */
+
+    .section-title{
+        font-size:32px;
+    }
+
+    .section-subtitle{
+        font-size:16px;
+    }
+
+}
