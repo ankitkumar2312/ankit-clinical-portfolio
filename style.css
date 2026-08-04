@@ -748,45 +748,52 @@ Responsive Design
     /* Hero */
 
     .hero{
-        flex-direction:column-reverse;
-        text-align:center;
-        gap:40px;
-        padding:120px 20px 60px;
-    }
+    display:flex;
+    flex-direction:column-reverse;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:110px 20px 60px;
+    gap:35px;
+}
 
-    .hero-left{
-        width:100%;
-    }
+.hero-left,
+.hero-right{
+    flex:none;
+    width:100%;
+}
 
-    .hero-right{
-        width:100%;
-    }
+.hero-left h1{
+    font-size:48px;
+    line-height:1.1;
+}
 
-    .hero-right img{
-        width:260px;
-        height:260px;
-    }
+.hero-left h2{
+    font-size:24px;
+}
 
-    .hero h1{
-        font-size:38px;
-    }
+.hero-text{
+    max-width:100%;
+    margin:0 auto;
+}
 
-    .hero h2{
-        font-size:22px;
-    }
+.hero-buttons{
+    justify-content:center;
+    flex-wrap:wrap;
+}
 
-    .hero-text{
-        font-size:16px;
-    }
+.hero-right img{
+    width:260px;
+    height:260px;
+}
 
-    .hero-buttons{
-        justify-content:center;
-        flex-wrap:wrap;
-    }
+.hero-stats{
+    justify-content:center;
+}
 
-    .hero-stats{
-        grid-template-columns:1fr;
-    }
+.stat-card{
+    width:160px;
+}
 
     /* About */
 
